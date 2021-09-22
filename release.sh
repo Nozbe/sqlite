@@ -38,6 +38,7 @@ echo "committing files..."
 git add "${download_folder}"
 rm sqlite3
 ln -s "${download_folder}" sqlite3
+git add sqlite3
 
 git commit -m "Updating src files for sqlite ${version}"
 
