@@ -1,18 +1,14 @@
 {
   "name": "@nozbe/sqlite",
   "description": "Fork of SQLite database - you're probably looking for WatermelonDB, not this",
-  "version": "3.31.1",
-  "scripts": {
-  },
+  "version": "3.36.0",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/Nozbe/sqlite.git"
   },
-  "dependencies": {
-  },
   "publishConfig": {
     "access": "public"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
