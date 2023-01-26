@@ -18,9 +18,9 @@ echo "downloading sqlite..."
 year="$(date +%Y)"
 
 version_to_download_js="v = process.argv[1];
-  pad0 = (str) => str.length == 1 ? str + 0 : str;
-  [major, minor, patch, micro = '0'] = v.split('.');
-  [major, pad0(minor), pad0(patch), pad0(micro)].join('')"
+  pad0 = (str) => (str + '000000').slice(0, 3);
+  [major, minor, patch] = v.split('.');
+  [major, pad0(minor), pad0(patch)].join('')"
 
 download_version=$(node -p "$version_to_download_js" "$version")
 download_folder="sqlite-amalgamation-${download_version}"
