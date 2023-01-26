@@ -26,7 +26,7 @@ download_version=$(node -p "$version_to_download_js" "$version")
 download_folder="sqlite-amalgamation-${download_version}"
 download_file="sqlite-amalgamation-${download_version}.zip"
 download_url="https://sqlite.org/${year}/${download_file}"
-curl "$download_url" -o "downloads/${download_file}"
+curl -f "$download_url" -o "downloads/${download_file}"
 
 echo "removing old sqlite files..."
 git rm -r sqlite-amalgamation-*
