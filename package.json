@@ -1,7 +1,7 @@
 {
   "name": "@nozbe/sqlite",
   "description": "Fork of SQLite database - you're probably looking for WatermelonDB, not this",
-  "version": "3.40.1",
+  "version": "3.46.0",
   "scripts": {},
   "repository": {
     "type": "git",
